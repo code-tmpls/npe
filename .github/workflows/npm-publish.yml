@@ -26,6 +26,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+          username: ${{ secrets.npm_user }}
+          password: ${{ secrets.npm_token }}
       - run: npm ci
       - run: npm publish
         env:
