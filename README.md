@@ -1,0 +1,2 @@
+# npe
+Node Packaging Example
